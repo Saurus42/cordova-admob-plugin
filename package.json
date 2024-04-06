@@ -1,0 +1,38 @@
+{
+  "name": "cordova-admob-plugin",
+  "version": "1.0.0",
+  "description": "Cordova plugin for AdMob integration",
+  "main": "plugin.xml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saurus42/cordova-admob-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "admob",
+    "plugin"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saurus42/cordova-admob-plugin/issues"
+  },
+  "homepage": "https://github.com/Saurus42/cordova-admob-plugin#readme",
+  "cordova": {
+    "id": "com.example.admob",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "engines": {
+      "cordova": "^11.0.0"
+    }
+  },
+  "dependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "devDependencies": {
+    "@types/cordova": "^11.0.0",
+    "cordova": "^11.0.0"
+  }
+}

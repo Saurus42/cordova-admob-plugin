@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-admob" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AdMob Plugin</name>
+    <description>Cordova plugin for AdMob integration</description>
+    <author email="your@email.com" href="http://yourwebsite.com">Your Name</author>
+    <js-module src="www/admob.js" name="AdMob">
+        <clobbers target="window.AdMob" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AdMob">
+                <param name="android-package" value="com.example.admob.AdMobManager" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+        <source-file src="src/android/AdMobManager.java" target-dir="src/com/example/admob" />
+    </platform>
+</plugin>
